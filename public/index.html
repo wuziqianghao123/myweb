@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线证件照制作工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>在线证件照制作工具</h1>
+            <p>电脑一键拍证件照，自动换底色、裁剪尺寸、去背景</p>
+        </header>
+        
+        <main>
+            <div class="left-column">
+                <section class="upload-section">
+                    <!-- <h2>上传照片</h2> -->
+                    <div class="upload-options">
+                        <div class="option">
+                            <input type="file" id="fileInput" accept="image/*">
+                            <label for="fileInput">点击选择照片</label>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="preview-section">
+                    <!-- <h2>预览效果</h2> -->
+                    <div class="preview-container">
+                        <canvas id="previewCanvas" width="400" height="500"></canvas>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="right-column">
+                <section class="edit-section">
+                    <h2>编辑功能</h2>
+                    
+                    <div class="bg-color-section">
+                        <h3>换底色</h3>
+                        <div class="color-options">
+                            <button class="color-btn blue" data-color="#0066cc">蓝</button>
+                            <button class="color-btn white" data-color="#ffffff">白</button>
+                            <button class="color-btn red" data-color="#cc0000">红</button>
+                        </div>
+                    </div>
+                    
+
+                </section>
+                
+                <section class="output-section">
+                    <h2>输出选项</h2>
+                    <div class="output-buttons">
+                        <!-- <button id="downloadBtn">下载高清无水印</button> -->
+                        <button id="secondaryDownloadBtn">下载</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2026 在线证件照制作工具</p>
+        </footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
